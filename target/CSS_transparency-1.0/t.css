@@ -1,0 +1,30 @@
+/*
+  Project name(项目名称)：CSS_transparency 
+  File name(文件名): t
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/2/3 
+  Time(创建时间)： 22:21
+  Version(版本): 1.0
+  Description(描述)：
+  CSS 中提供了一个 opacity 属性用来设置元素的透明度，它不仅对颜色有效，对图像或者页面中其它的元素也有效。其语法格式如下：
+opacity: number;
+其中 number 为一个 0~1 之间的浮点数（小数），用来表示元素的透明度，值越小则越透明（0 表示完全透明，1 表示完全不透明）。
+另外，在使用 opacity 属性时，还需要注意以下几点：
+当一个元素定义了 opacity 属性，并且其值小于 1 时，那么它的子元素也会拥有同样的透明度；
+当一个元素定义了 opacity 属性，并且其值小于 1 时，将会重新定义该元素默认的 z-index 属性，如果其它的元素为非定位元素，那么该元素的堆叠级别将会高于其它元素；
+如果定义的 opacity 属性值超过了指定的范围，那么则截取与之最相近的值，例如 1.5 将截取为 1。
+
+ */
+
+img {
+    width: 200px;
+}
+
+img:last-child {
+    /*filter: alpha(opacity=50);*/
+    opacity: 0.6;
+    margin-left: 30px;
+}
+    
